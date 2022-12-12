@@ -1,19 +1,31 @@
 <template>
     <div class="navbar">
-        <div style="font-size: 20px" @click="$router.push('/')">
-            Vue3 + Vite
+        <div style="font-size: 20px; cursor: pointer;" @click="$router.push('/')">
+            Marketplace
         </div>
         <div class="nav_btn">
-            <my-button
-                style="margin-left: 20px"
+            <div 
+                class="btn"
                 @click="$router.push('/about-me')"
-                >About Me</my-button
-            >
-            <my-button
-                style="margin-left: 20px"
+                >Marketplace
+            </div>
+            <div 
+                class="btn"
                 @click="$router.push('/articles')"
-                >Articles</my-button
-            >
+                >Rankings
+            </div>
+            <div 
+                class="btn"
+                @click="$router.push('/articles')"
+                >Connect a wallet
+            </div>
+            <my-button 
+                @click="$router.push('/articles')"
+                ><img src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/6357ceb6d40a1d649668f069/img/user-1@2x.svg" />
+                <div class="btn_signup">
+                    Sign Up
+                </div> 
+            </my-button>
         </div>
     </div>
 </template>
@@ -28,15 +40,39 @@ export default {
 
 <style lang="scss">
 .navbar {
-    height: 50px;
-    background-color: rgba(16, 40, 37, 0.87);
-    box-shadow: 2px 2px 4px #001515;
+    font-family: var(--font-family-space_mono);
+    height: 100px;
+    // background-color: #2B2B2B;
+    color: #FFFFFF;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 15px;
 }
 
 .nav_btn {
     margin-left: auto;
+    background-color: transparent;
+    letter-spacing: 0.00px;
+    line-height: 22.4px;
+    mix-blend-mode: normal;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+.btn {
+    margin-left: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+.btn_signup {
+    color: var(--text);
+    font-family: var(--font-family-work_sans);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 600;
 }
 </style>
