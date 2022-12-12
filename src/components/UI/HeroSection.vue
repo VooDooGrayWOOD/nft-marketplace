@@ -3,50 +3,50 @@
         <div class="hero_section_frame">
             <div class="hero_text_button">
                 <div class="headline-subhead">
-                    <p class="discover-digital-art-collect-nf-ts-D4ivpR valign-text-middle worksans-semi-bold-white-38px" data-id="I1962:8412;1962:8276">
+                    <p class="discover-digital-art-collect-nf-ts-D4ivpR valign-text-middle worksans-semi-bold-white-38px" >
                     Discover Digital Art & Collect Nfts
                     </p>
-                    <p class="nft-marketplace-ui-c-D4ivpR worksans-normal-white-16px" data-id="I1962:8412;1962:8277">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+                    <p class="nft-marketplace-ui-c-D4ivpR worksans-normal-white-16px" >NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
                 </div>
                 <a href="create-account-tablet">
-                    <my-button class="smart-layers-pointers" data-id="I1962:8412;1962:8278" data-hotspot-id="hp-1">
-                        <img class="icon-paper_plane-FU2HYd" data-id="I1962:8412;1962:8278;1424:1791" src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/6357ceb6d40a1d649668f069/img/rocketlaunch-2@2x.svg" alt="icon-paper_plane"/>
-                        <div class="button-FU2HYd worksans-semi-bold-white-16px" data-id="I1962:8412;1962:8278;1424:1792">
+                    <my-button class="smart-layers-pointers">
+                        <img class="icon-paper_plane" src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/6357ceb6d40a1d649668f069/img/rocketlaunch-2@2x.svg" alt="icon-paper_plane"/>
+                        <div>
                             Get Started
                         </div>
                     </my-button>
                 </a>
-                <div class="additional-info-pDutu9" data-id="I1962:8412;1962:8279">
-                    <div class="total-sale-JhiPKg" data-id="I1962:8412;1962:8280">
-                        <div class="x240k-puVG18 valign-text-middle spacemono-bold-white-22px" data-id="I1962:8412;1962:8281">
+                <div class="additional-info-pDutu9" >
+                    <div>
+                        <div class="spacemono-bold-white-22px">
                             240k+
                         </div>
-                        <div class="total-sale-puVG18 worksans-normal-white-16px" data-id="I1962:8412;1962:8282">
+                        <div class="worksans-normal-white-16px">
                             Total Sale
                         </div>
                     </div>
-                    <div class="auctions-JhiPKg" data-id="I1962:8412;1962:8283">
-                        <div class="x100k-tAgjPE valign-text-middle spacemono-bold-white-22px" data-id="I1962:8412;1962:8284">
+                    <div>
+                        <div class="spacemono-bold-white-22px" >
                             100k+
                         </div>
-                        <div class="auctions-tAgjPE worksans-normal-white-16px" data-id="I1962:8412;1962:8285">
+                        <div class="worksans-normal-white-16px">
                             Auctions
                         </div>
                     </div>
-                    <div class="artists-JhiPKg" data-id="I1962:8412;1962:8286">
-                        <div class="x240k-Fb6EBK valign-text-middle spacemono-bold-white-22px" data-id="I1962:8412;1962:8287">
+                    <div>
+                        <div class="spacemono-bold-white-22px">
                             240k+
                         </div>
-                        <div class="artists-Fb6EBK worksans-normal-white-16px" data-id="I1962:8412;1962:8288">
+                        <div class="worksans-normal-white-16px">
                             Artists
                         </div>
                     </div>
                 </div>
             </div>
             <a href="artist-page-tablet">
-                    <div class="highlighted-nft">
+                <div class="highlighted-nft">
                         <img style="width:100%; height:100%" src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif" anima-src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"/>
-                    </div>
+                </div>
             </a>
         </div>
     </div>
@@ -160,6 +160,7 @@ export default {
     font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 700;
+    padding-bottom: 10px;
 }
 .additional-info-pDutu9 {
     align-items: flex-start;
@@ -172,7 +173,7 @@ export default {
     height: auto;
     position: relative;
 }
-.icon-paper_plane-FU2HYd {
+.icon-paper_plane {
     background-color: transparent;
     height: 20px;
     min-width: 20px;
