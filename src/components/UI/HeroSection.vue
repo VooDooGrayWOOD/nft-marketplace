@@ -54,11 +54,11 @@
 <script>
 import MyButton from './MyButton.vue'
 export default {
-    components: { MyButton }
+    components: { MyButton },
 }
 </script>
 <style lang="scss">
-    .hero_section {
+.hero_section {
     align-items: center;
     align-self: stretch;
     background-color: var(--background);
@@ -68,29 +68,31 @@ export default {
     height: auto;
     justify-content: center;
     mix-blend-mode: normal;
-    padding: 80px 0px;
+    padding: 80px 195px;
     position: relative;
 }
 .hero_section_frame {
-    align-items: flex-start;
+    align-items: center;
     background-color: transparent;
     border: 1px none;
     display: flex;
     gap: 30px;
     height: auto;
+    margin-left: -80px;
+    margin-right: -80px;
     position: relative;
-    width: 690px;
+    width: 1050px;
 }
 .hero_text_button {
     align-items: flex-start;
     background-color: transparent;
     border: 1px none;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     height: auto;
     position: relative;
-    width: 330px;
 }
 .headline-subhead {
     align-items: flex-start;
@@ -103,11 +105,11 @@ export default {
     height: auto;
     position: relative;
 }
-.discover-digital-art {
+.discover-digital-art-collect-nf-ts-D4ivpR {
     background-color: transparent;
     color: var(--text);
     flex: 1;
-    font-family: var(--font-family-work_sans);
+    font-family: var(--font-family-space_mono);
     font-size: var(--font-size-xxxxl);
     font-style: normal;
     font-weight: 600;
@@ -133,7 +135,7 @@ export default {
 }
 .worksans-semi-bold-white-16px {
     color: var(--text);
-    font-family: var(--font-family-work_sans);
+    font-family: var(--font-family-space_mono);
     font-size: var(--font-size-m);
     font-style: normal;
     font-weight: 400;
@@ -142,7 +144,7 @@ export default {
     align-self: stretch;
     background-color: transparent;
     letter-spacing: 0.00px;
-    line-height: 22.4px;
+    line-height: 35.2px;
     mix-blend-mode: normal;
     position: relative;
     text-align: left;
@@ -173,6 +175,9 @@ export default {
     height: auto;
     position: relative;
 }
+.smart-layers-pointers {
+    margin: 0;
+}
 .icon-paper_plane {
     background-color: transparent;
     height: 20px;
@@ -187,7 +192,7 @@ export default {
     display: flex;
     flex: 1;
     flex-direction: column;
-    height: 330px;
+    height: 510px;
     overflow: hidden;
     position: relative;
 }

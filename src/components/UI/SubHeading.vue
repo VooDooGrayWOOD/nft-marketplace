@@ -20,7 +20,7 @@ export default {
     text-align: left;
     white-space: nowrap;
     color: var(--text);
-    font-family: var(--font-family-work_sans);
+    font-family: var(--font-family-space_mono);
     font-size: var(--font-size-m);
     font-style: normal;
     font-weight: 400;

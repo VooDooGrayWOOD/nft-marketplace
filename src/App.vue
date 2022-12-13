@@ -14,6 +14,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -21,10 +23,12 @@ export default {
 }
 html {
     display: block;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
 }
 
 :root {
-    // font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    // font-family: Helvetica, sans-serif;
 
     color: rgba(39, 99, 91, 0.87);
     background-color: var(--background);
@@ -52,16 +56,26 @@ html {
     --font-size-xxl: 38px;
     --font-size-xxxl: 51px;
     --font-size-xxxxl: 67px;
-    --font-family-space_mono: "Space Mono", Helvetica;
-    --font-family-work_sans: "Work Sans", Helvetica;
+    --font-family-space_mono: 'Space Mono', monospace;
+    --font-family-work_sans: 'Work Sans', sans-serif;
 }
 
 .app {
-    padding: 20px;
-    margin: auto;
+    align-items: center;
+    background-color: var(--background);
+    border: 1px none;
     display: flex;
-    justify-content: center;
-    max-width: 720px;
+    flex-direction: column;
+    height: 100vh;
+    left: 0px;
+    margin: 0px;
+    min-height: 5537px;
+    min-width: 834px;
+    mix-blend-mode: normal;
+    overflow-x: hidden;
+    position: relative;
+    top: 0px;
+    width: 100%;
 }
 
 // @media screen and (min-width: 834px) and (max-width: 1279px) {

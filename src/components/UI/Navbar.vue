@@ -1,6 +1,6 @@
 <template>
     <div class="navbar">
-        <div style="font-size: 20px; cursor: pointer;" @click="$router.push('/')">
+        <div style="font-size: var(--font-size-l); font-family: var(--font-family-space_mono); cursor: pointer;" @click="$router.push('/')">
             Marketplace
         </div>
         <div class="nav_btn">
@@ -40,7 +40,7 @@ export default {
 
 <style lang="scss">
 .navbar {
-    font-family: var(--font-family-space_mono);
+    font-family: var(font-family-work_sans);
     height: 100px;
     // background-color: #2B2B2B;
     color: #FFFFFF;
@@ -68,9 +68,12 @@ export default {
     text-align: center;
     cursor: pointer;
 }
+.btn:hover {
+    transform:  scale(0.95);
+}
 .btn_signup {
     color: var(--text);
-    font-family: var(--font-family-work_sans);
+    font-family: var(font-family-work_sans);
     font-size: var(--font-size-m);
     font-style: normal;
     font-weight: 600;

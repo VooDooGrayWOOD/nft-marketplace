@@ -30,4 +30,7 @@ export default {}
     transition: all 0.3s ease;
     width: fit-content;
 }
+.btn:hover {
+    transform:  scale(0.95);
+}
 </style>
