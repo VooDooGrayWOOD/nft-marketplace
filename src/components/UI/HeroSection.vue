@@ -124,7 +124,7 @@ export default {
 .worksans-semi-bold-white-38px {
     color: var(--text);
     font-family: var(--font-family-work_sans);
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xxxxl);
     font-style: normal;
     font-weight: 600;
 }
@@ -152,14 +152,14 @@ export default {
 .worksans-normal-white-16px {
     color: var(--text);
     font-family: var(--font-family-work_sans);
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-l);
     font-style: normal;
     font-weight: 400;
 }
 .spacemono-bold-white-22px {
     color: var(--text);
     font-family: var(--font-family-space_mono);
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-xl);
     font-style: normal;
     font-weight: 700;
     padding-bottom: 10px;

@@ -56,8 +56,8 @@ html {
     --font-size-xxl: 38px;
     --font-size-xxxl: 51px;
     --font-size-xxxxl: 67px;
-    --font-family-space_mono: 'Space Mono', monospace;
-    --font-family-work_sans: 'Work Sans', sans-serif;
+    --font-family-space_mono: 'Space Mono', Helvetica;
+    --font-family-work_sans: 'Work Sans', Helvetica;
 }
 
 .app {

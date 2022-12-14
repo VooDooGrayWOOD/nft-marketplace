@@ -42,7 +42,6 @@ export default {
 .navbar {
     font-family: var(font-family-work_sans);
     height: 100px;
-    // background-color: #2B2B2B;
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -64,7 +63,7 @@ export default {
     width: fit-content;
 }
 .btn {
-    margin-left: 20px;
+    margin-left: 60px;
     text-align: center;
     cursor: pointer;
 }
