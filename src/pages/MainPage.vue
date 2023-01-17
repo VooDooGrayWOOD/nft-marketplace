@@ -1,17 +1,19 @@
 <template>
-    <div>
+  <div>
     <HeroSection></HeroSection>
     <TrendingCollections></TrendingCollections>
-</div>
+    <TopCreators></TopCreators>
+  </div>
 </template>
 
 <script>
-import HeroSection from '../components/UI/HeroSection.vue';
-import TrendingCollections from '../components/UI/TrendingCollections.vue'
+import HeroSection from '../components/HeroSection.vue';
+import TrendingCollections from '../components/TrendingCollections.vue'
+import TopCreators from "../components/TopCreators.vue";
 
 
 export default {
-    components: { HeroSection, TrendingCollections }
+  components: {TopCreators, HeroSection, TrendingCollections}
 }
 </script>
 
