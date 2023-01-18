@@ -1,5 +1,5 @@
 <template>
-  <div class="artist-card-grid" v-for="(creator, index) in creators" :key="index">
+  <div class="artist-card-grid">
     <div class="artist-card-row">
       <a href="artist-page">
         <div class="artist-card">
@@ -7,22 +7,22 @@
             <div class="avatar">
               <div class="asset">
                 <img class="avatar-placeholder"
-                     :src="creator.avatar"
+                     :src="avatar"
                      alt="Avatar Placeholder">
               </div>
             </div>
           </div>
           <div class="artist-info">
             <div class="dish-studio">
-              {{ creator.dish_studio }}
+              {{ dish_studio }}
             </div>
             <div class="additional-info">
               <div class="total-sales">Total Sales:</div>
-              <div class="price">{{ creator.price }}</div>
+              <div class="price">{{ price }}</div>
             </div>
           </div>
           <div class="ranking-number">
-            <div class="number">{{ creator.number }}</div>
+            <div class="number">{{ number }}</div>
           </div>
         </div>
       </a>
@@ -32,95 +32,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      creators: [
-        {
-          id: 1,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-3@2x.png",
-          dish_studio: "Keepitreal",
-          price: "34.53 ETH",
-          number: "1"
-        },
-        {
-          id: 2,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-4@2x.png",
-          dish_studio: "Digilab",
-          price: "34.53 ETH",
-          number: "2"
-        },
-        {
-          id: 3,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-5@2x.png",
-          dish_studio: "Gravityone",
-          price: "34.53 ETH",
-          number: "3"
-        },
-        {
-          id: 4,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-6@2x.png",
-          dish_studio: "Gravityone",
-          price: "34.53 ETH",
-          number: "4"
-        },
-        {
-          id: 5,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-7@2x.png",
-          dish_studio: "Bluewhale",
-          price: "34.53 ETH",
-          number: "5"
-        },
-        {
-          id: 6,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-8@2x.png",
-          dish_studio: "Mr Fox",
-          price: "34.53 ETH",
-          number: "6"
-        },
-        {
-          id: 7,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-9@2x.png",
-          dish_studio: "Shroomie",
-          price: "34.53 ETH",
-          number: "7"
-        },
-        {
-          id: 8,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-10@2x.png",
-          dish_studio: "Robotica",
-          price: "34.53 ETH",
-          number: "8"
-        },
-        {
-          id: 9,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-11@2x.png",
-          dish_studio: "Rustyrobot",
-          price: "34.53 ETH",
-          number: "9"
-        },
-        {
-          id: 10,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-12@2x.png",
-          dish_studio: "Animakid",
-          price: "34.53 ETH",
-          number: "10"
-        },
-        {
-          id: 11,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-13@2x.png",
-          dish_studio: "Dotgu",
-          price: "34.53 ETH",
-          number: "11"
-        },
-        {
-          id: 12,
-          avatar: "https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-14@2x.png",
-          dish_studio: "Ghibler",
-          price: "34.53 ETH",
-          number: "12"
-        },
-      ]
-    }
+  props: {
+    avatar: String,
+    dish_studio: String,
+    price: String,
+    number: String
   }
 }
 
@@ -131,12 +47,8 @@ export default {
   align-items: flex-start;
   background-color: transparent;
   border: 1px none;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  gap: 60px;
   height: auto;
-  margin-left: -80px;
-  margin-right: -80px;
   position: relative;
   width: fit-content;
 }
@@ -149,7 +61,7 @@ export default {
   gap: 30px;
   height: auto;
   position: relative;
-  width: 1050px;
+  /*width: 400px;*/
 }
 
 .artist-card {
@@ -165,6 +77,7 @@ export default {
   height: auto;
   mix-blend-mode: normal;
   padding: 20px;
+  margin: 10px;
   pointer-events: auto;
   position: relative;
   transition: all 0.3s ease;
@@ -283,6 +196,8 @@ export default {
   background-color: var(--background);
   border: 1px none;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
   height: 30px;
   left: 20px;
   mix-blend-mode: normal;
