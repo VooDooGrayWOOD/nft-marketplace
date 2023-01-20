@@ -5,6 +5,7 @@
     <TopCreators></TopCreators>
     <BrowseCategories></BrowseCategories>
     <DiscoverMoreNFTS></DiscoverMoreNFTS>
+    <NftHighlight></NftHighlight>
   </div>
 </template>
 
@@ -14,10 +15,18 @@ import TrendingCollections from '../components/TrendingCollections.vue'
 import TopCreators from "../components/TopCreators.vue";
 import BrowseCategories from "../components/BrowseCategories.vue";
 import DiscoverMoreNFTS from "../components/DiscoverMoreNFTS.vue";
+import NftHighlight from "../components/NftHighlight.vue";
 
 
 export default {
-  components: {DiscoverMoreNFTS, BrowseCategories, TopCreators, HeroSection, TrendingCollections}
+  components: {
+    NftHighlight,
+    DiscoverMoreNFTS,
+    BrowseCategories,
+    TopCreators,
+    HeroSection,
+    TrendingCollections
+  }
 }
 </script>
 

@@ -84,7 +84,7 @@ export default {
   gap: 30px;
   height: auto;
   position: relative;
-  width: 350px;
+  width: 335px;
 }
 
 .nft-card {
