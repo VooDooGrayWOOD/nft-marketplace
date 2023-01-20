@@ -70,7 +70,7 @@ html {
   height: 100vh;
   left: 0;
   margin: 0;
-  min-height: 6695px;
+  min-height: 6580px;
   min-width: 1280px;
   mix-blend-mode: normal;
   overflow-x: hidden;
