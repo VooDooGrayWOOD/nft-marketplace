@@ -2,7 +2,7 @@
   <div class="discover-more-nfts">
     <div class="headline-button">
       <div class="head">
-        <Heading style="font-size: var(--font-size-xxl); font-style: italic;">
+        <Heading style="font-size: var(--font-size-xxl);">
           Discover More NFTS
         </Heading>
         <SubHeading

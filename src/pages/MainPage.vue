@@ -6,6 +6,7 @@
     <BrowseCategories></BrowseCategories>
     <DiscoverMoreNFTS></DiscoverMoreNFTS>
     <NftHighlight></NftHighlight>
+    <HowItWorks></HowItWorks>
   </div>
 </template>
 
@@ -16,10 +17,12 @@ import TopCreators from "../components/TopCreators.vue";
 import BrowseCategories from "../components/BrowseCategories.vue";
 import DiscoverMoreNFTS from "../components/DiscoverMoreNFTS.vue";
 import NftHighlight from "../components/NftHighlight.vue";
+import HowItWorks from "../components/HowItWorks.vue";
 
 
 export default {
   components: {
+    HowItWorks,
     NftHighlight,
     DiscoverMoreNFTS,
     BrowseCategories,
