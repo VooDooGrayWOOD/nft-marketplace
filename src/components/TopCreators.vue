@@ -154,14 +154,6 @@ export default {
 </script>
 
 <style scoped>
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
 .top-creators {
   align-items: center;
   align-self: stretch;
@@ -220,4 +212,11 @@ export default {
   width: fit-content;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
 </style>
