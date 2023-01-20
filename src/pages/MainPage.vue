@@ -7,6 +7,7 @@
     <DiscoverMoreNFTS></DiscoverMoreNFTS>
     <NftHighlight></NftHighlight>
     <HowItWorks></HowItWorks>
+    <SubscribeWidget></SubscribeWidget>
   </div>
 </template>
 
@@ -18,10 +19,12 @@ import BrowseCategories from "../components/BrowseCategories.vue";
 import DiscoverMoreNFTS from "../components/DiscoverMoreNFTS.vue";
 import NftHighlight from "../components/NftHighlight.vue";
 import HowItWorks from "../components/HowItWorks.vue";
+import SubscribeWidget from "../components/SubscribeWidget.vue";
 
 
 export default {
   components: {
+    SubscribeWidget,
     HowItWorks,
     NftHighlight,
     DiscoverMoreNFTS,
