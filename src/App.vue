@@ -79,6 +79,10 @@ html {
   width: 100%;
 }
 
+a {
+  color: var(--text)
+}
+
 // @media screen and (min-width: 834px) and (max-width: 1279px) {
 
 // }
