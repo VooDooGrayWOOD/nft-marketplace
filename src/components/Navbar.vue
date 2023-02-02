@@ -1,85 +1,93 @@
 <template>
-  <div class="navbar">
-    <div style="font-size: var(--font-size-l); font-family: var(--font-family-space_mono); cursor: pointer;"
-         @click="$router.push('/')">
-      Marketplace
-    </div>
-    <div class="nav_btn">
-      <div
-          class="btn"
-          @click="$router.push('/about-me')"
-      >Marketplace
-      </div>
-      <div
-          class="btn"
-          @click="$router.push('/articles')"
-      >Rankings
-      </div>
-      <div
-          class="btn"
-          @click="$router.push('/articles')"
-      >Connect a wallet
-      </div>
-      <my-button
-          @click="$router.push('/articles')"
-      ><img
-          src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/6357ceb6d40a1d649668f069/img/user-1@2x.svg"/>
-        <div class="btn_signup">
-          Sign Up
+    <div class="navbar">
+        <div @click="$router.push('/')" class="logo">
+            <img
+                
+                src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/6357ceb6d40a1d649668f069/img/storefront-7@2x.svg"
+                alt="Storefront"
+                
+            /><img
+                
+                src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/6357ceb6d40a1d649668f069/img/nft-marketplace-3@2x.svg"
+                alt="NFT Marketplace"
+                
+            />
         </div>
-      </my-button>
+        <div class="nav_btn">
+            <div class="btn" @click="$router.push('/about-me')">
+                Marketplace
+            </div>
+            <div class="btn" @click="$router.push('/articles')">Rankings</div>
+            <div class="btn" @click="$router.push('/articles')">
+                Connect a wallet
+            </div>
+            <my-button @click="$router.push('/articles')"
+                ><img
+                    src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/6357ceb6d40a1d649668f069/img/user-1@2x.svg"
+                />
+                <div class="btn_signup">Sign Up</div>
+            </my-button>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
 import MyButton from './UI/MyButton.vue'
 
 export default {
-  components: {MyButton}
+    components: { MyButton }
 }
 </script>
 
 <style lang="scss">
 .navbar {
-  align-items: center;
-  align-self: stretch;
-  height: auto;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: space-between;
-  mix-blend-mode: normal;
-  padding: 20px 50px;
-  position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    padding: 15px 15px;
+    max-width: 1210px;
+    color: #ffffff;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / 4 span;
+    place-items: center start;
+    cursor: pointer;
 }
 
 .nav_btn {
-  align-items: center;
-  background-color: transparent;
-  border: 1px none;
-  display: flex;
-  gap: 10px;
-  height: auto;
-  justify-content: flex-end;
-  position: relative;
-  width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 6 / 7 span;
+    place-items: center;
+    white-space: nowrap;
 }
 
 .btn {
-  padding: 0px 20px;
-  text-align: center;
-  cursor: pointer;
+    padding: 0px 20px;
+    text-align: center;
+    cursor: pointer;
 }
 
 .btn:hover {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 .btn_signup {
-  color: var(--text);
-  font-family: var(font-family-work_sans);
-  font-size: var(--font-size-m);
-  font-style: normal;
-  font-weight: 600;
+    display: grid;
+    place-items: center end;
+    font-size: var(--font-size-m);
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        grid-column: 2 / 4 span;
+    }
+    .nav_btn {
+        display: none;
+    }
 }
 </style>

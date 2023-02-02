@@ -109,6 +109,8 @@ export default {
   mix-blend-mode: normal;
   padding: 360px 195px 60px;
   position: relative;
+
+
 }
 
 .frame-highlight {
