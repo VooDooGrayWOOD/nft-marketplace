@@ -23,10 +23,26 @@ export default {
     box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 html {
-    // display: block;
     font-family: 'Space Mono', monospace;
     font-family: 'Work Sans', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
 }
 
 :root {
@@ -60,20 +76,20 @@ html {
     --font-family-work_sans: 'Work Sans', Helvetica;
 }
 
-.app {
-  background-color: var(--background);
-  border: 1px none;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  left: 0;
-  margin: 0;
-  min-height: 6695px;
-  min-width: 1280px;
-  mix-blend-mode: normal;
-  overflow-x: hidden;
-  position: relative;
-  top: 0;
-  width: 100%;
-}
+// .app {
+//   background-color: var(--background);
+//   border: 1px none;
+//   display: flex;
+//   flex-direction: column;
+//   height: 100vh;
+//   left: 0;
+//   margin: 0;
+//   min-height: 6695px;
+//   min-width: 1280px;
+//   mix-blend-mode: normal;
+//   overflow-x: hidden;
+//   position: relative;
+//   top: 0;
+//   width: 100%;
+// }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <HeroSection></HeroSection>
-        <!-- <TrendingCollections></TrendingCollections> -->
+        <TrendingCollections></TrendingCollections>
         <!-- <TopCreators></TopCreators> -->
         <!-- <BrowseCategories></BrowseCategories> -->
         <!-- <DiscoverMoreNFTS></DiscoverMoreNFTS> -->
@@ -13,27 +13,26 @@
 </template>
 
 <script>
-import HeroSection from '../components/HeroSection.vue';
+import HeroSection from '../components/HeroSection.vue'
 import TrendingCollections from '../components/TrendingCollections.vue'
-import TopCreators from "../components/TopCreators.vue";
-import BrowseCategories from "../components/BrowseCategories.vue";
-import DiscoverMoreNFTS from "../components/DiscoverMoreNFTS.vue";
-import NftHighlight from "../components/NftHighlight.vue";
-import HowItWorks from "../components/HowItWorks.vue";
-import SubscribeWidget from "../components/SubscribeWidget.vue";
-
+import TopCreators from '../components/TopCreators.vue'
+import BrowseCategories from '../components/BrowseCategories.vue'
+import DiscoverMoreNFTS from '../components/DiscoverMoreNFTS.vue'
+import NftHighlight from '../components/NftHighlight.vue'
+import HowItWorks from '../components/HowItWorks.vue'
+import SubscribeWidget from '../components/SubscribeWidget.vue'
 
 export default {
-  components: {
-    SubscribeWidget,
-    HowItWorks,
-    NftHighlight,
-    DiscoverMoreNFTS,
-    BrowseCategories,
-    TopCreators,
-    HeroSection,
-    TrendingCollections
-  }
+    components: {
+        SubscribeWidget,
+        HowItWorks,
+        NftHighlight,
+        DiscoverMoreNFTS,
+        BrowseCategories,
+        TopCreators,
+        HeroSection,
+        TrendingCollections
+    }
 }
 </script>
 
@@ -44,7 +43,8 @@ export default {
     gap: 10px;
     margin: 0 auto;
     padding: 80px 115px;
-    max-width: 1280px;
+    max-width: 1050px;
+    min-width: 320px;
     height: 0;
 }
 
@@ -59,5 +59,4 @@ export default {
         padding: 40px 20px;
     }
 }
-
 </style>

@@ -46,7 +46,7 @@ export default {
     gap: 20px;
     margin: 0 auto;
     padding: 15px 15px;
-    max-width: 1210px;
+    max-width: 1177px;
     color: #ffffff;
 }
 
