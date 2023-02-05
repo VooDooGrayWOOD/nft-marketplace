@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <HeroSection></HeroSection>
-        <TrendingCollections></TrendingCollections>
+        <!-- <TrendingCollections></TrendingCollections> -->
         <!-- <TopCreators></TopCreators> -->
         <!-- <BrowseCategories></BrowseCategories> -->
         <!-- <DiscoverMoreNFTS></DiscoverMoreNFTS> -->
@@ -44,8 +44,21 @@ export default {
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
     margin: 0 auto;
-    padding: 0 115px;
+    padding: 80px 115px;
     max-width: 1280px;
     height: 0;
-    // overflow-x: hidden;
-}</style>
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 80px 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 40px 20px;
+    }
+}
+
+</style>
