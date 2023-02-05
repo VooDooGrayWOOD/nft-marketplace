@@ -60,7 +60,20 @@ html {
     --font-family-work_sans: 'Work Sans', Helvetica;
 }
 
-a {
-    color: var(--text);
+.app {
+  background-color: var(--background);
+  border: 1px none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  margin: 0;
+  min-height: 6580px;
+  min-width: 1280px;
+  mix-blend-mode: normal;
+  overflow-x: hidden;
+  position: relative;
+  top: 0;
+  width: 100%;
 }
 </style>
