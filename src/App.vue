@@ -17,10 +17,22 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
 
-*, html, *::before, *::after {
+*,
+html,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 html {
@@ -75,6 +87,7 @@ html {
     position: relative;
     top: 0;
     width: 100%;
+    color: var(--text);
 }
 
 // @media screen and (min-width: 834px) and (max-width: 1279px) {
