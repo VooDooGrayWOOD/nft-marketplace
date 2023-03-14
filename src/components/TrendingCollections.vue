@@ -124,6 +124,8 @@ export default {
 </script>
 <style lang="scss">
 .trending-section {
+    width: 100%;
+    height: auto;
     align-items: center;
     align-self: stretch;
     background-color: var(--background);

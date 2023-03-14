@@ -72,6 +72,8 @@ export default {
 
 <style scoped>
 .how-it-works {
+    width: 100%;
+    height: auto;
     align-items: center;
     align-self: stretch;
     background-color: var(--background);

@@ -86,6 +86,8 @@ export default {
 
 <style scoped>
 .discover-more-nfts {
+    width: 100%;
+    height: auto;
     align-items: center;
     align-self: stretch;
     background-color: var(--background);

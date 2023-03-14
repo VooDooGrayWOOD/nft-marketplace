@@ -42,6 +42,7 @@ export default {
 
 <style lang="scss">
 .navbar {
+    width: 100%;
     align-items: center;
     align-self: stretch;
     height: auto;

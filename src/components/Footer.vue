@@ -117,6 +117,8 @@ export default {
 
 <style scoped>
 .footer {
+    width: 100%;
+    height: auto;
     align-items: center;
     align-self: stretch;
     background-color: var(--background---secondary);
