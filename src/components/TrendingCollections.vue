@@ -124,32 +124,16 @@ export default {
 </script>
 <style lang="scss">
 .trending-section {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--background);
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: auto;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 80px 195px;
-    position: relative;
+    display: grid;
+    grid-column: 1 / 12 span;
+    margin: 80px auto;
 }
 
 .head {
-    align-items: flex-start;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: auto;
-    position: relative;
-    width: 1046px;
+    display: grid;
+    place-items: center start;
+    gap: 20px;
+    width: 1200px;
 }
 
 .template {

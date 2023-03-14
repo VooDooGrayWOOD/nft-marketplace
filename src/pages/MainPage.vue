@@ -1,15 +1,13 @@
 <template>
-    <div class="container">
         <HeroSection></HeroSection>
         <TrendingCollections></TrendingCollections>
-        <TopCreators></TopCreators>
+        <!-- <TopCreators></TopCreators>
         <BrowseCategories></BrowseCategories>
         <DiscoverMoreNFTS></DiscoverMoreNFTS>
         <NftHighlight></NftHighlight>
         <HowItWorks></HowItWorks>
         <SubscribeWidget></SubscribeWidget>
-        <Footer></Footer>
-    </div>
+        <Footer></Footer> -->
 </template>
 
 <script>
@@ -39,8 +37,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-    display: flex;
-    flex-wrap: wrap;
-}
 </style>

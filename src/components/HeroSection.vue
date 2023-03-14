@@ -2,9 +2,9 @@
     <div class="hero_section">
         <div class="hero_section_frame">
             <div class="hero_text_button">
-                <div class="headline-subhead">
+                <div class="headline-subhead item">
                     <p
-                        class="discover-digital-art-collect-nf-ts-D4ivpR valign-text-middle worksans-semi-bold-white-38px"
+                        class="discover-digital-art-collect-nf-ts-D4ivpR worksans-semi-bold-white-38px"
                     >
                         Discover Digital Art & Collect Nfts
                     </p>
@@ -16,7 +16,14 @@
                         artists.
                     </p>
                 </div>
-                <a href="create-account-tablet">
+                <div class="highlighted-nft item">
+                    <a href="artist-page-tablet">
+                        <img
+                            src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"
+                        />
+                    </a>
+                </div>
+                <a href="create-account-tablet item">
                     <my-button class="smart-layers-pointers">
                         <img
                             class="icon-paper_plane"
@@ -26,7 +33,7 @@
                         <div>Get Started</div>
                     </my-button>
                 </a>
-                <div class="additional-info-pDutu9">
+                <div class="additional-info-pDutu9 item">
                     <div>
                         <div class="spacemono-bold-white-22px">240k+</div>
                         <div class="worksans-normal-white-16px">Total Sale</div>
@@ -41,15 +48,6 @@
                     </div>
                 </div>
             </div>
-            <a href="artist-page-tablet">
-                <div class="highlighted-nft">
-                    <img
-                        style="width: 100%; height: 100%"
-                        src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"
-                        anima-src="https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/files/heroanimationtransparentbck-2.gif"
-                    />
-                </div>
-            </a>
         </div>
     </div>
 </template>
@@ -62,123 +60,54 @@ export default {
 </script>
 <style lang="scss">
 .hero_section {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    align-self: stretch;
     background-color: var(--background);
-    border: 1px none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-    align-content: center;
-    mix-blend-mode: normal;
-    padding: 80px 195px;
-    position: relative;
+    display: grid;
+    grid-column: 1 / 12 span;
+    margin: 0 auto;
 }
 
 .hero_section_frame {
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
     height: auto;
-    margin-left: -80px;
-    margin-right: -80px;
-    position: relative;
-    max-width: 1050px;
 }
 
 .hero_text_button {
-    align-items: flex-start;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 30px;
-    height: auto;
-    position: relative;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(130px, 1fr));
+    place-items: center start;
+    gap: 20px;
+    margin: 0 15px;
 }
 
 .headline-subhead {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    gap: 10px;
     height: auto;
-    position: relative;
 }
 
-.discover-digital-art-collect-nf-ts-D4ivpR {
-    background-color: transparent;
-    color: var(--text);
-    flex: 1;
-    font-family: var(--font-family-space_mono);
-    font-size: var(--font-size-xxxxl);
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0px;
-    line-height: 73.7px;
-    margin-top: -1px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: left;
-    width: 510px;
+.item:nth-child(2) {
+    grid-row: 1 / 3 span;
+    grid-column: 2 / 1 span;
 }
 
 .worksans-semi-bold-white-38px {
-    color: var(--text);
-    font-family: var(--font-family-work_sans);
     font-size: var(--font-size-xxxxl);
-    font-style: normal;
-    font-weight: 600;
-}
-
-.valign-text-middle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .worksans-semi-bold-white-16px {
-    color: var(--text);
-    font-family: var(--font-family-space_mono);
     font-size: var(--font-size-m);
-    font-style: normal;
-    font-weight: 400;
 }
 
 .nft-marketplace-ui-c-D4ivpR {
-    align-self: stretch;
-    background-color: transparent;
-    letter-spacing: 0px;
     line-height: 35.2px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: left;
 }
 
 .worksans-normal-white-16px {
-    color: var(--text);
-    font-family: var(--font-family-work_sans);
     font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 400;
 }
 
 .spacemono-bold-white-22px {
-    color: var(--text);
     font-family: var(--font-family-space_mono);
     font-size: var(--font-size-xl);
-    font-style: normal;
-    font-weight: 700;
     padding-bottom: 10px;
 }
 
@@ -206,21 +135,65 @@ export default {
 }
 
 .highlighted-nft {
-    align-items: center;
-    background-color: transparent;
-    border: 1px none;
-    cursor: pointer;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    height: 510px;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-width: 320px;
+    height: auto;
 }
 
 a:-webkit-any-link {
     color: var(--text);
     cursor: pointer;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .hero_section_frame {
+        max-height: 600px;
+    }
+
+    .hero_text_button {
+        grid-column: 3 span;
+        text-align: center;
+        place-items: center;
+    }
+
+    .subhead_head {
+        font-size: var(--font-size-xl);
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .hero_section {
+        text-align: center;
+    }
+    .subhead_head {
+        font-size: var(--font-size-l);
+    }
+    .social_icon img {
+        margin: 0;
+        width: 38px;
+        height: 38px;
+    }
+    .headline-subhead {
+        margin: 0 15px;
+    }
+    
+    .item:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .worksans-semi-bold-white-38px {
+        font-size: var(--font-size-xxl);
+    }
+
+    .worksans-normal-white-16px {
+        font-size: var(--font-size-m);
+    }
+
+    .spacemono-bold-white-22px {
+        font-size: var(--font-size-l);
+    }
 }
 </style>

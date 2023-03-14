@@ -1,96 +1,94 @@
 <template>
     <navbar></navbar>
-    <form class="app">
-        <router-view></router-view>
-    </form>
+        <form class="app">
+            <vue-scroll-up
+            tag="div"
+            custom-class="my-scroll-up"
+            :scroll-duration="1000"
+            :scroll-y="250"
+            :always-show="false"
+        />
+            <router-view></router-view>
+        </form>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
+import VueScrollUp from 'vue-scroll-up'
 
 export default {
-    components: { Navbar }
+    components: { Navbar, VueScrollUp }
 }
 </script>
 
-<style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
-
-*,
-html,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-}
-
-html {
-    display: block;
-    font-family: 'Space Mono', monospace;
-    font-family: 'Work Sans', sans-serif;
-}
-
-:root {
-    color: rgba(39, 99, 91, 0.87);
-    background-color: var(--background);
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-
-    --background: #2b2b2b;
-    --background---secondary: #3b3b3b;
-    --black: #000000;
-    --call-to-action: #a259ff;
-    --caption--label-text: #858584;
-    --celeste: #cccccc;
-    --jade: #00ac4f;
-    --masala: #3b3b3b80;
-    --text: #ffffff;
-    --white: #ffffff1a;
-    --font-size-l: 22px;
-    --font-size-m: 16px;
-    --font-size-s: 12px;
-    --font-size-xl: 28px;
-    --font-size-xxl: 38px;
-    --font-size-xxxl: 51px;
-    --font-size-xxxxl: 67px;
-    --font-family-space_mono: 'Space Mono', Helvetica;
-    --font-family-work_sans: 'Work Sans', Helvetica;
-}
-
+<style lang="scss" scoped>
 .app {
     background-color: var(--background);
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    left: 0;
-    margin: 0;
-    min-height: 6580px;
-    min-width: 1280px;
-    mix-blend-mode: normal;
-    overflow-x: hidden;
-    position: relative;
-    top: 0;
-    width: 100%;
     color: var(--text);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0 5px;
+    max-width: 1210px;
+    height: 0;
 }
 
-// @media screen and (min-width: 834px) and (max-width: 1279px) {
+.my-scroll-up {
+    align-items: center;
+    background-color: var(--background---secondary);
+    border: rgba(0, 0, 0, 0.658);
+    border-radius: 100px;
+    bottom: 50px;
+    color: var(--call-to-action);
+    cursor: pointer;
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    width: 55px;
+    z-index: 99;
+}
 
-// }
+.my-scroll-up::after {
+    border: 2px solid var(--call-to-action);
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 25px;
+    margin: 0 auto;
+    width: 10px;
+}
+
+.my-scroll-up::before {
+    animation: 2s top infinite;
+    border: 1px solid var(--call-to-action);
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 49%;
+    position: absolute;
+    width: 0;
+}
+
+@keyframes top {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .vue-scroll-up {
+        bottom: 10px;
+        transform: translateX(5px) scale(0.7);
+    }
+}
 </style>
