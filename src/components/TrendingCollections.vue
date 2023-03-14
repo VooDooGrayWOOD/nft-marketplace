@@ -126,43 +126,35 @@ export default {
 .trending-section {
     display: grid;
     grid-column: 1 / 12 span;
-    margin: 80px auto;
+    margin: 0 auto;
 }
 
 .head {
     display: grid;
     place-items: center start;
     gap: 20px;
-    width: 1200px;
 }
 
 .template {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .collection-slider {
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
+    display: grid;
+    place-items: center;
     gap: 30px;
     height: auto;
-    position: relative;
     padding-top: 40px;
     width: 350px;
 }
 
 .collection-card {
     background-color: var(--background);
-    border: 1px none;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px;
     height: auto;
     padding-top: 20px;
-    mix-blend-mode: normal;
-    position: relative;
     width: 330px;
 }
 
@@ -171,71 +163,38 @@ img:hover {
 }
 
 .photos-number {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px;
-    height: auto;
-    position: relative;
 }
 
 .frame {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    height: auto;
-    position: relative;
 }
 
 .primary-photo-placeholder {
     align-self: stretch;
     background-color: transparent;
     cursor: pointer;
-    height: 330px;
-    min-width: 330px;
-    mix-blend-mode: normal;
-    object-fit: cover;
-    pointer-events: auto;
-    position: relative;
     transition: all 0.3s ease;
 }
 
 .secondary-photo-placeholder {
-    background-color: transparent;
     cursor: pointer;
-    flex: 1;
     height: 100px;
     min-width: 100px;
-    mix-blend-mode: normal;
-    object-fit: cover;
-    pointer-events: auto;
-    position: relative;
     transition: all 0.3s ease;
 }
 
 .number-of-additional {
     align-items: center;
     background-color: var(--call-to-action);
-    border: 1px none;
     border-radius: 20px;
     cursor: pointer;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    gap: 10px;
     height: 100px;
     min-width: 100px;
-    justify-content: center;
-    mix-blend-mode: normal;
     padding: 32px 15px;
-    pointer-events: auto;
-    position: relative;
     transition: all 0.3s ease;
 }
 
@@ -244,94 +203,20 @@ img:hover {
 }
 
 .x1025 {
-    background-color: transparent;
-    letter-spacing: 0px;
-    line-height: 35.2px;
-    margin-top: -0.5px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
-    width: fit-content;
-    color: var(--text);
     font-family: var(--font-family-space_mono);
     font-size: var(--font-size-l);
-    font-style: normal;
-    font-weight: 700;
 }
 
 .collection-info {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 10px;
-    height: auto;
-    position: relative;
-}
-
-.collection-name {
-    align-self: stretch;
-    background-color: transparent;
-    letter-spacing: 0px;
-    line-height: 30.8px;
-    margin-top: -1px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
 }
 
 .artist-card {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: transparent;
-    border: 1px none;
     border-radius: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
     gap: 12px;
-    height: auto;
-    position: relative;
-}
-
-.artist-name {
-    background-color: transparent;
-    flex: 1;
-    letter-spacing: 0px;
-    line-height: 22.4px;
-    margin-top: -1px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
-}
-
-.avatar {
-    align-items: flex-start;
-    background-color: transparent;
-    border: 1px none;
-    cursor: pointer;
-    display: flex;
-    gap: 10px;
-    height: auto;
-    mix-blend-mode: normal;
-    pointer-events: auto;
-    position: relative;
-    transition: all 0.3s ease;
-    width: fit-content;
-}
-
-.artist-name {
-    background-color: transparent;
-    flex: 1;
-    letter-spacing: 0px;
-    line-height: 22.4px;
-    margin-top: -1px;
-    mix-blend-mode: normal;
-    position: relative;
-    text-align: left;
-    white-space: nowrap;
 }
 </style>

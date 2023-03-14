@@ -30,7 +30,7 @@ export default {
     gap: 10px;
     margin: 0 auto;
     padding: 0 5px;
-    max-width: 1210px;
+    max-width: 1050px;
     height: 0;
 }
 
