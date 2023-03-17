@@ -62,20 +62,17 @@ export default {
 
 <style scoped>
 .nft-cards-grid {
-    align-items: center;
     background-color: transparent;
     border: 1px none;
     gap: 60px;
     height: auto;
-    /* position: relative; */
-    /* width: fit-content; */
 }
 
 .nft-cards-row {
     align-items: center;
     background-color: transparent;
     border: 1px none;
-    display: flex;
+    display: grid;
     gap: 30px;
     height: auto;
     position: relative;
@@ -88,7 +85,7 @@ export default {
     border: 1px none;
     border-radius: 20px;
     cursor: pointer;
-    display: flex;
+    display: grid;
     flex: 1;
     flex-direction: column;
     height: 469px;
@@ -104,7 +101,7 @@ export default {
     background-color: transparent;
     border: 1px none;
     border-radius: 20px 20px 0 0;
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 10px;
     height: auto;
@@ -112,38 +109,26 @@ export default {
 }
 
 .image-placeholder {
-    align-self: stretch;
     background-color: transparent;
-    height: 296px;
-    min-width: 330px;
-    mix-blend-mode: normal;
+    height: auto;
+    min-width: 340px;
     object-fit: cover;
-    position: relative;
 }
 
 .nft-info {
-    align-items: flex-start;
-    align-self: stretch;
     background-color: transparent;
     border: 1px none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 25px;
-    height: auto;
     padding: 20px 30px 25px;
-    position: relative;
 }
 
 .artist-info {
-    align-items: flex-start;
-    align-self: stretch;
     background-color: transparent;
     border: 1px none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 5px;
     height: auto;
-    position: relative;
 }
 
 .nft-name {
@@ -152,6 +137,7 @@ export default {
     letter-spacing: 0px;
     line-height: 30.8px;
     margin-top: -1px;
+    font-size: var(--font-size-l);
     mix-blend-mode: normal;
     position: relative;
     text-align: left;
@@ -159,26 +145,13 @@ export default {
 }
 
 .artist-avatar-name {
-    align-items: flex-start;
-    align-self: stretch;
+    place-items: start;
     background-color: transparent;
     border: 1px none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 12px;
     height: auto;
-    position: relative;
-}
-
-.avatar {
-    align-items: flex-start;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    gap: 10px;
-    height: auto;
-    mix-blend-mode: normal;
-    position: relative;
-    width: fit-content;
 }
 
 .asset {
@@ -186,7 +159,6 @@ export default {
     border: 1px none;
     height: 24px;
     min-width: 24px;
-    mix-blend-mode: normal;
     position: relative;
 }
 
@@ -194,7 +166,6 @@ export default {
     background-color: transparent;
     height: 24px;
     left: 0;
-    mix-blend-mode: normal;
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -202,12 +173,10 @@ export default {
 }
 
 .nft-artist {
-    background-color: transparent;
-    flex: 1;
     letter-spacing: 0px;
-    line-height: 22.4px;
     margin-top: -1px;
-    mix-blend-mode: normal;
+    font-size: var(--font-size-m);
+    font-family: var(--font-family-space_mono);
     position: relative;
     text-align: left;
     white-space: nowrap;
@@ -249,6 +218,7 @@ export default {
     mix-blend-mode: normal;
     position: relative;
     text-align: left;
+    font-family: var(--font-family-space_mono);
     color: var(--caption--label-text);
     white-space: nowrap;
 }
@@ -262,6 +232,7 @@ export default {
     position: relative;
     text-align: left;
     white-space: nowrap;
+    font-family: var(--font-family-space_mono);
 }
 
 .highest-bid-div {
@@ -286,6 +257,7 @@ export default {
     mix-blend-mode: normal;
     position: relative;
     text-align: right;
+    font-family: var(--font-family-space_mono);
     color: var(--caption--label-text);
     white-space: nowrap;
 }
@@ -296,6 +268,7 @@ export default {
     letter-spacing: 0px;
     line-height: 22.4px;
     mix-blend-mode: normal;
+    font-family: var(--font-family-space_mono);
     position: relative;
     text-align: right;
     white-space: nowrap;

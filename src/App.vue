@@ -1,6 +1,6 @@
 <template>
     <navbar></navbar>
-        <form class="app">
+        <div class="container">
             <vue-scroll-up
             tag="div"
             custom-class="my-scroll-up"
@@ -9,7 +9,7 @@
             :always-show="false"
         />
             <router-view></router-view>
-        </form>
+        </div>
 </template>
 
 <script>
@@ -22,11 +22,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.app {
+.container {
     background-color: var(--background);
     color: var(--text);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 1 / 12 span;
     margin: 0 auto;
     padding: 0 5px;
     max-width: 1050px;

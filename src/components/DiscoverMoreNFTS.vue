@@ -86,69 +86,44 @@ export default {
 
 <style scoped>
 .discover-more-nfts {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    align-self: stretch;
     background-color: var(--background);
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 30px;
-    height: auto;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 80px 195px;
-    position: relative;
+    margin: 80px 0 0;
 }
 
 .headline-button {
-    align-items: flex-end;
     background-color: transparent;
+    grid-template-columns: repeat(12, 1fr);
     border: 1px none;
-    display: flex;
-    gap: 100px;
-    height: auto;
-    margin-left: -80px;
-    margin-right: -80px;
-    position: relative;
-    width: 1050px;
+    display: grid;
+    gap: 30px;
 }
 
 .head {
-    align-items: flex-start;
     background-color: transparent;
     border: 1px none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: 1/11 span;
     gap: 10px;
     height: auto;
-    position: relative;
-    width: 750px;
 }
 
 .see-all {
-    align-items: center;
     background-color: transparent;
     border: 2px solid;
     border-color: var(--call-to-action);
     border-radius: 20px;
     cursor: pointer;
-    display: flex;
     gap: 15px;
-    height: 60px;
-    justify-content: center;
     padding: 0 50px;
-    pointer-events: auto;
-    position: relative;
     transition: all 0.3s ease;
-    width: fit-content;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 20px;
+    gap: 20px;
 }
 </style>

@@ -105,7 +105,7 @@ export default {
     height: auto;
     justify-content: center;
     position: relative;
-    width: 1050px;
+    /* width: 1050px; */
 }
 
 .nft-artist-name-button {
