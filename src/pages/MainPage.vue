@@ -1,13 +1,13 @@
 <template>
         <HeroSection></HeroSection>
         <TrendingCollections></TrendingCollections>
-        <!-- <TopCreators></TopCreators>
+        <TopCreators></TopCreators>
         <BrowseCategories></BrowseCategories>
-        <DiscoverMoreNFTS></DiscoverMoreNFTS>
-        <NftHighlight></NftHighlight>
-        <HowItWorks></HowItWorks>
-        <SubscribeWidget></SubscribeWidget>
-        <Footer></Footer> -->
+        <!-- <DiscoverMoreNFTS></DiscoverMoreNFTS> -->
+        <!-- <NftHighlight></NftHighlight> -->
+        <!-- <HowItWorks></HowItWorks> -->
+        <!-- <SubscribeWidget></SubscribeWidget> -->
+        <!-- <Footer></Footer> -->
 </template>
 
 <script>
@@ -27,8 +27,8 @@ export default {
         SubscribeWidget,
         HowItWorks,
         NftHighlight,
-        DiscoverMoreNFTS,
         BrowseCategories,
+        DiscoverMoreNFTS,
         TopCreators,
         HeroSection,
         TrendingCollections

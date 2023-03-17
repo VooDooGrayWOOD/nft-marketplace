@@ -67,8 +67,8 @@ export default {
     border: 1px none;
     gap: 60px;
     height: auto;
-    position: relative;
-    width: fit-content;
+    /* position: relative; */
+    /* width: fit-content; */
 }
 
 .nft-cards-row {

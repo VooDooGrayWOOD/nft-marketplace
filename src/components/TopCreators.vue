@@ -2,19 +2,12 @@
     <div class="top-creators">
         <div class="headline-button">
             <div class="head">
-                <Heading style="font-size: var(--font-size-xxl)">
-                    Top Creators
-                </Heading>
-                <SubHeading
-                    style="
-                        font-family: var(--font-family-work_sans);
-                        font-size: var(--font-size-l);
-                    "
-                >
+                <Heading> Top Creators </Heading>
+                <SubHeading>
                     Checkout Top Rated Creators On The Nft Marketplace.
                 </SubHeading>
             </div>
-            <div>
+            <div class="button">
                 <my-button class="view-rankings">
                     <img
                         class="rocket-launch"
@@ -25,7 +18,7 @@
                 </my-button>
             </div>
         </div>
-        <div class="grid">
+        <div class="grid-creators">
             <Creator
                 v-for="(creator, index) in creators"
                 :key="index"
@@ -89,7 +82,7 @@ export default {
                 {
                     id: 4,
                     avatar: 'https://cdn.animaapp.com/projects/6357ce7c8a65b2f16659918c/releases/637e564ca17e9f3ed8e13520/img/avatar-placeholder-6@2x.png',
-                    dish_studio: 'Gravityone',
+                    dish_studio: 'Juanie',
                     price: '34.53 ETH',
                     number: '4'
                 }
@@ -159,72 +152,49 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .top-creators {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--background);
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: auto;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 80px 195px;
-    position: relative;
+    display: grid;
+    grid-column: 1 / 12 span;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .headline-button {
-    align-items: center;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    gap: 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    place-items: center start;
+    gap: 20px;
     height: auto;
-    margin-left: -80px;
-    margin-right: -80px;
-    position: relative;
-    width: 1050px;
+    margin: 80px 15px 0;
 }
 
 .head {
-    align-items: flex-start;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: 1 / 11 span;
     gap: 10px;
-    height: auto;
-    position: relative;
-    width: 703px;
+    width: auto;
+}
+
+.button {
+    place-items: center end;
 }
 
 .view-rankings {
-    align-items: center;
     background-color: transparent;
     border: 2px solid;
     border-color: var(--call-to-action);
-    border-radius: 20px;
     cursor: pointer;
-    display: flex;
-    gap: 12px;
-    height: 60px;
-    justify-content: center;
     padding: 0 50px;
-    pointer-events: auto;
-    position: relative;
     transition: all 0.3s ease;
-    width: fit-content;
 }
 
-.grid {
+.grid-creators {
+    margin-top: 60px;
+    margin-bottom: 80px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    gap: 20px;
+    place-items: center;
 }
 </style>

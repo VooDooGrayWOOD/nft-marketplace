@@ -5,9 +5,9 @@
                 Browse Categories
             </Heading>
         </div>
-        <div class="category-cards-grid">
-            <div class="category-cards-row">
-                <div class="grid">
+        <div class="category-cards_grid">
+            <div class="category-cards_row">
+                <div class="grid-categories">
                     <CategoryCard
                         v-for="(category, index) in categories"
                         :key="index"
@@ -24,7 +24,6 @@
                     ></CategoryCard>
                 </div>
             </div>
-            <div class="category-cards-row"></div>
         </div>
     </div>
 </template>
@@ -112,64 +111,23 @@ export default {
 
 <style scoped>
 .browse-categories {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    align-self: stretch;
     background-color: var(--background);
     border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    height: auto;
-    mix-blend-mode: normal;
-    overflow: hidden;
-    padding: 80px 195px;
-    position: relative;
-}
-
-.head {
-    align-items: flex-start;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: auto;
-    position: relative;
-    width: 1050px;
-}
-
-.category-cards-grid {
-    align-items: center;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    height: auto;
-    margin-left: -80px;
-    margin-right: -80px;
-    position: relative;
-    width: 1025px;
-}
-
-.category-cards-row {
-    align-items: center;
-    align-self: stretch;
-    background-color: transparent;
-    border: 1px none;
-    display: flex;
-    gap: 30px;
-    height: auto;
-    position: relative;
-}
-
-.grid {
     display: grid;
+    gap: 60px;
+}
+
+.category-cards_row {
+    background-color: transparent;
+    border: 1px none;
+    display: grid;
+    gap: 30px;
+}
+
+.grid-categories {
+    display: grid;
+    place-items: center;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    gap: 26px;
 }
 </style>

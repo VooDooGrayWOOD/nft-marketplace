@@ -27,7 +27,6 @@ export default {
     color: var(--text);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 10px;
     margin: 0 auto;
     padding: 0 5px;
     max-width: 1050px;

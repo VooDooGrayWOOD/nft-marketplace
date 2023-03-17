@@ -156,8 +156,8 @@ export default {
     border: 1px none;
     display: grid;
     margin: 16px 0;
-    grid-template-columns: repeat(6, 1fr);
-    grid-column: 6/8 span;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 5/8 span;
     place-items: center;
     white-space: nowrap;
     letter-spacing: 0px;

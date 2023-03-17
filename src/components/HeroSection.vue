@@ -75,7 +75,7 @@ export default {
     grid-template-rows: repeat(auto-fit, minmax(130px, 1fr));
     place-items: center start;
     gap: 20px;
-    margin: 0 15px;
+    margin: 80px auto 80px;
 }
 
 .headline-subhead {
@@ -91,6 +91,7 @@ export default {
 
 .worksans-semi-bold-white-38px {
     font-size: var(--font-size-xxxxl);
+    font-weight: 600;
 }
 
 .worksans-semi-bold-white-16px {
@@ -148,10 +149,6 @@ a:-webkit-any-link {
 }
 
 @media screen and (max-width: 1020px) {
-    .hero_section_frame {
-        max-height: 600px;
-    }
-
     .hero_text_button {
         grid-column: 3 span;
         text-align: center;
